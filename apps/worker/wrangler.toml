@@ -1,4 +1,4 @@
-name = "uptimer"
+name = "beforeve-status"
 main = "src/index.ts"
 compatibility_date = "2026-01-28"
 
@@ -7,7 +7,7 @@ crons = ["* * * * *", "0 0 * * *"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "uptimer"
+database_name = "beforeve-status"
 # Replace with your real D1 database_id for remote/preview usage.
 database_id = "00000000-0000-0000-0000-000000000000"
 

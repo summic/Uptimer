@@ -16,6 +16,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
+      UPTIMER_DEFAULT_PREFIX: beforeve-status
       # Keep secrets out of expressions like `if:` (fork-/sync-friendly) by
       # projecting them into env once, then referencing `env.*` everywhere.
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -122,7 +123,7 @@ jobs:
             default_slug="uptimer"
           fi
 
-          prefix="${UPTIMER_PREFIX:-$default_slug}"
+          prefix="${UPTIMER_PREFIX:-${UPTIMER_DEFAULT_PREFIX:-$default_slug}}"
           worker_name="${UPTIMER_WORKER_NAME:-$prefix}"
           pages_project="${UPTIMER_PAGES_PROJECT:-$prefix}"
           d1_name="${UPTIMER_D1_NAME:-$prefix}"

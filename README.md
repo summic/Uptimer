@@ -192,6 +192,7 @@ Default addresses:
 | Document                                                                                                   | Description                                                |
 | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | [Deployment Guide](docs/deploy-github-actions.md) ([中文](docs/deploy-github-actions.zh-CN.md))            | Full GitHub Actions deployment walkthrough                 |
+| [Beforeve Deployment Notes](docs/deploy-beforeve.md)                                                         | Beforeve-specific Cloudflare and domain configuration      |
 | [Configuration Reference](docs/configuration-reference.md) ([中文](docs/configuration-reference.zh-CN.md)) | All configurable parameters (secrets, variables, settings) |
 | [Notification System](docs/notifications.md) ([中文](docs/notifications.zh-CN.md))                         | Webhook setup, templates, signatures, troubleshooting      |
 | [Local Development](Develop/LOCAL-TESTING.md)                                                              | Local setup, seed data, testing procedures                 |
